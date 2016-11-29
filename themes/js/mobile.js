@@ -261,7 +261,7 @@ $(document).on("pageshow", function() { // login
 $(document).on("pageshow",'#decoyLanding', function() { // login
 
 
-    showLoader();
+   // showLoader();
     var firstrun = window.localStorage.getItem("runned");
 
     if (firstrun === null || firstrun==='null') {
