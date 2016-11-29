@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.radiosonconsult.doc"
+        version   = "1.2.0">
+    <name>Afya Plus - Doctor's App</name>
+
+    <description>
+	Radioson Consult - The health worker channel
+    </description>
+
+    <author href="http://radiosonconsult.com" email="info@radiosonconsult.co.ke">
+        Radioson Consult
+    </author>
+    
+    <access origin="*" />
+   <allow-intent href="*" />
+   <allow-navigation href="*" />
+	
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+   </feature>
+   
+   
+   <!--<preference name="phonegap-version" value="cli-5.1.1" /> -->
+   <preference name="android-build-tool" value="gradle" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+
+    
+
+	<icon src="icon.png" />
+    <icon src="images/icon-36.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="images/icon-48.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="images/icon-72.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="images/icon-96.png"  gap:platform="android"    gap:density="xhdpi" />
+
+    <!-- <dependency id="cordova-plugin-app-event" />
+
+      <gap:plugin name="com.footprint.cordova.plugin.local-notification"  version="0.8.0" source="pgb" />-->
+
+       <gap:plugin name="de.appplant.cordova.plugin.local-notification" source="npm" />
+
+       <!-- <gap:plugin name="com.jmi2.cordova.geolocation" />-->
+       <plugin name="org.apache.cordova.inappbrowser" source="npm" spec="0.6.0" />
+ <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+
+   </widget>
