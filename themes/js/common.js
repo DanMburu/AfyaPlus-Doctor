@@ -75,7 +75,7 @@ $(document).on("pageshow", "#login", function () { // When entering login
                         SaveUserDetails(data);
                     }catch(err){}
 
-                     $('#lnkInit').trigger('click');
+                   
                     // $('.span-success').show();
                     $.mobile.changePage('#landing', {
                         type: "get",
@@ -95,6 +95,12 @@ $(document).on("pageshow", "#login", function () { // When entering login
 });
 
 $(document).on("pageshow","#landing", function () { // When entering login
+
+  
+var scope = angular.element(document.querySelector('body')).scope();
+if(typeof scope.specialities==='undefined'){
+     $('#lnkInit').trigger('click');
+}
 
 
     setTimeout(function(){

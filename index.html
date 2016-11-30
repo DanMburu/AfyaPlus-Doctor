@@ -28,8 +28,9 @@
       <script src="themes/owl-carousel/owl.carousel.min.js"></script>
    </head>
    <body ng-controller="clientCtrl">
+   <div id="customPreloaderBg"></div>
       <!--
-         <div id="customPreloaderBg"></div>
+         
          <input type="hidden" id="HFLatitude" value="-1.268125" />
          <input type="hidden" id="HFLongitude" value="36.806330" />
          -->
@@ -39,9 +40,7 @@
       <a data-role="none" href="#menupanel" id="menuclose" data-rel="close"></a>
       <div id="menupanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="push" data-theme="a">
          <ul id="mainmenu" data-role="listview" class="ui-listview">
-            <li class="ui-first-child"><a href="#" id="menu-teaser" class="ui-btn">Main Menu</a></li>
-            <li><a href="#landing" id="lnklanding" data-transition="pop" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Home</a>
-            </li>
+            <li class="ui-first-child"><a href="#" id="menu-teaser" class="ui-btn">Main Menu</a></li>           
             <li><a class="lnkhospitalsearch ui-btn ui-btn-icon-right ui-icon-carat-r" href="#landing">Home</a></li>
             <li><a class="lnkhospitalsearch ui-btn ui-btn-icon-right ui-icon-carat-r" ng-click="searchHospitals()" href="#">
                Hospital Directory</a>

@@ -531,11 +531,13 @@ function showLoader() {
         textonly: false,
         html: ''
     });
+    $('#customPreloaderBg').fadeIn();
 }
 
 function hideLoader() {
 	
     $.mobile.loading("hide");
+    $('#customPreloaderBg').fadeOut();
 }
 
 $.urlParam = function(shows)
