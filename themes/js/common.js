@@ -181,22 +181,6 @@ function menuOpen() {
     }
     //}//end if
 }
-
-function showLoader() {
-
-    $.mobile.loading("show", {
-        text: 'loading',
-        textVisible: false,
-        theme: 'a',
-        textonly: false,
-        html: ''
-    });
-}
-
-function hideLoader() {
-    $.mobile.loading("hide");
-}
-
 $.urlParam = function (shows) {
     var results = new RegExp('[\\?&]' + shows + '=([^&#]*)').exec(window.location.href);
     if (!results) {

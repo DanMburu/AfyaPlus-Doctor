@@ -54,7 +54,7 @@ app.controller('clientCtrl',['$scope','$http','$filter', function (scope,http,fi
             scope.examCategories = data['examCategories'];
             scope.examPreparations = data['examPreparations'];
             scope.titles = data['userTitles'];
-             $('#customPreloader,#customPreloaderBg').remove();
+            
             hideLoader();
 
 
