@@ -239,7 +239,7 @@ function RemoveLocationNotification() {
     $('.ui-footer').hide();
 }
 
-
+/*
 $(document).on("pageshow", function() { // login
 
 
@@ -258,6 +258,7 @@ $(document).on("pageshow", function() { // login
     });
 
 });
+*/
 $(document).on("pageshow",'#decoyLanding', function() { // login
 
 
