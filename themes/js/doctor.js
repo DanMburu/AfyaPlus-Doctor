@@ -437,8 +437,8 @@ $(document).on("pageshow",'#my-appointments', function () {
     });
 });
 $(document).on("pageshow", "#register", function () {
-    $('#registerSpecialityId').selectmenu(); // initialize
-    $('#registerSpecialityId').selectmenu('refresh');
+    $('#registerSpecialityId,#UserTitleId').selectmenu(); // initialize
+    $('#registerSpecialityId,#UserTitleId').selectmenu('refresh');
      $('#btnRegister').off('click').on("click", function(e) {
          var allFilled = true;
           $('#registerIdNumber').val($('#registerPhoneNumber').val());

@@ -287,8 +287,9 @@
          <form id="frm-register">
             <div data-role="fieldcontain">
                <label>Title:</label>
-               <select name="UserTitleId"  ng-model="UserTitleId">
-                  <option ng-selected="(title.Id == 1)" ng-repeat="title in titles" value="{{title.Id}}">{{title.Name}}</option>
+
+               <select name="UserTitleId" id="UserTitleId" ng-model="UserTitleId">
+                  <option ng-selected="(title.Id === 1)" ng-repeat="title in titles" value="{{title.Id}}">{{title.Name}}</option>
                </select>
             </div>
             <div data-role="fieldcontain">
