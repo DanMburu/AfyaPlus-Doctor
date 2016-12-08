@@ -79,6 +79,8 @@ app.controller('clientCtrl',['$scope','$http','$filter', function (scope,http,fi
         });
     };
     scope.register=function(){
+     
+       /*
         var url =rootUrl+'Doctor/Register/';
         showLoader();
         http.get(url).success(function(data) {
@@ -86,6 +88,23 @@ app.controller('clientCtrl',['$scope','$http','$filter', function (scope,http,fi
             $.mobile.changePage( '#register', {type: "get", transition: "slide"});
             hideLoader();
         });
+        */
+        var url = $('#RootUrl').val() + 'Client/Init/';
+        showLoader();      
+        http.get(url).success(function (data) {
+            scope.featuredProducts = data['featuredProducts'];
+            scope.user = data['user'];
+            scope.hospitals = data['hospitals'];
+            scope.specialities = data['specialities'];
+            scope.counties = data['counties'];
+            scope.locations = data['locations'];
+            scope.examCategories = data['examCategories'];
+            scope.examPreparations = data['examPreparations'];
+            scope.titles = data['userTitles'];
+            scope.UserTitleId=1;
+             $.mobile.changePage( '#register', {type: "get", transition: "slide"});
+            hideLoader();
+        }).error(ajaxError);
     }; // End Function
     scope.getChatList=function(id){		
         var url = rootUrl+'Doctor/Queries/'+id+'/Details/';

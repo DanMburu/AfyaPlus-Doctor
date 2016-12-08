@@ -16,7 +16,7 @@ function onDeviceReady() {
     }
     else {
       //  $.mobile.changePage( '#dashboard', {type: "get", transition: "slide"});
-        GetUserDetails();
+       // GetUserDetails();
     }
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
