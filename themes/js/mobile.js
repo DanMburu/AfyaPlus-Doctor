@@ -16,7 +16,7 @@ function onDeviceReady() {
     }
     else {
       //  $.mobile.changePage( '#dashboard', {type: "get", transition: "slide"});
-       // GetUserDetails();
+        GetUserDetails();
     }
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
@@ -101,10 +101,12 @@ function GetUserDetails() {
                 var len = result.rows.length;
                 var row = result.rows.item(0);
                 $('#UserId').val(row.UserId);
+                $('#LOGGEDIN').val('yes');
                 $.mobile.changePage( '#landing', {
                     type: "get",
-                    transition: "flip"
+                    transition: "slide"
                 });
+
                 setTimeout(function () {
                     startChat();
 
